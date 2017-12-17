@@ -1,7 +1,7 @@
 Leaflet Routing Machine / OpenRoute Service
 ===========================================
 
-NOTE: As of the latest commit, this is a preliminary implementation. For example, there is Browserfy implementation at this time, as is the norm for other extentions of the Leaflet Routing Machine.
+NOTE: As of the latest commit, this is a preliminary implementation. For example, there is NO Browserfy implementation at this time, as is the norm for other extentions of the Leaflet Routing Machine.
 
 Author: [James G. Willmore](mailto:willmorejg@gmail.com?subject=lrm-openrouteservice%20inquiry)
 
