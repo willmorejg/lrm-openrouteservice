@@ -26,3 +26,12 @@ L.Routing.control({
 ```
 
 Note that you will need to pass a valid OpenRoute Service api key to the constructor.
+
+By default the router will query for car routes.
+To change to a different route type you can pass `profile` as an option to the constructor.
+
+```javascript
+L.Routing.control({
+    router: new L.Routing.openrouteservice('api key', { profile: 'foot-walking' }),
+}).addTo(map);
+```

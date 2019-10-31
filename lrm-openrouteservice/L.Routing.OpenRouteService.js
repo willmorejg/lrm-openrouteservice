@@ -17,6 +17,7 @@
 
 		initialize: function (apiKey, options) {
 			this._apiKey = apiKey;
+            this._profile = options.profile || 'driving-car';
 			L.Util.setOptions(this, options);
 		},
 
@@ -168,7 +169,7 @@
 				geometry_format: 'geojson',
 				preference: 'recommended',
 				units: 'm',
-				profile: 'driving-car',
+				profile: this._profile,
 				api_key: this._apiKey
 			}, this.options.urlParameters), baseUrl);
 		},
