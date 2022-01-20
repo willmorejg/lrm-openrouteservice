@@ -25,4 +25,16 @@ L.Routing.control({
 }).addTo(map);
 ```
 
-Note that you will need to pass a valid OpenRoute Service api key to the constructor.
+```javascript
+L.Routing.control({
+    router: new L.Routing.openrouteserviceV2(
+        '{{ openserviceroute_key }}',
+        {
+                profile: "driving-car",
+                geometry_simplify: true // Needs to do _decodePolyline and smaller request
+        }
+    ),
+}).addTo(map);
+```
+
+Note that you will need to pass a valid OpenRoute Service api key and options to the constructor.
